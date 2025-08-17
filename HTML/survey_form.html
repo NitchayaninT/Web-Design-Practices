@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Survey Form</title>
+    <title>Lofi Website Survey Form</title>
   </head>
   <body>
     <header>
@@ -10,15 +10,15 @@
       <p id="description">Thank you for taking the time to help us improve the platform</p>
     </header>
     <main>
-      <fieldset>
-        <legend>Personal Information</legend>
         <form id="survey-form">
+          <fieldset>
+          <legend>Personal Information</legend>
           <label for="name" id="name-label">Name</label>
-          <input type="text" id="name" required placeholder="Example" value="Example">
+          <input type="text" id="name" required placeholder="Example">
           <label for="email" id="email-label">Email</label>
-          <input type="email" id="email" required placeholder="example@gmail.com" value="example@gmail.com">
+          <input type="email" id="email" required placeholder="example@gmail.com">
           <label for="number" id="number-label">Age</label>
-          <input type="number" id="number" min="13" max="80" placeholder="13" value="13">
+          <input type="number" id="number" min="13" max="80" placeholder="13">
 
           <label for="dropdown">Select Your current Role</label>
           <select id="dropdown">
@@ -31,19 +31,25 @@
 
          <fieldset>
           <legend>Survey</legend>
-          <p>Will you recommend our platform to others?</p>
-          <input id="definitely-option" type="radio" name="recommendation" >
+          <p>Will you recommend our website to others?</p>
+          <input id="definitely-option" type="radio" name="recommendation" value="definitely-option">
           <label for="definitely-option">Definitely</label>
-          <input id="maybe-option" type="radio" name="recommendation" >
+          <input id="maybe-option" type="radio" name="recommendation" value="maybe-option">
           <label for="maybe-option">Maybe</label>
-          <input id="no-option" type="radio" name="recommendation" >
+          <input id="no-option" type="radio" name="recommendation" value="no-option">
           <label for="no-option">No</label>
           
           <p>What would you like to see improved?</p>
           <input type="checkbox" value="design" id="design">
           <label for="design">Design</label>
           <input type="checkbox" value="courses" id="courses">
-          <label for="courses">Courses</label>
+          <label for="courses">Variety of Songs</label>
+          <input type="checkbox" value="more_options" id="more_options">
+          <label for="more-options">More Options</label>
+
+          <p>Any comments?</p>
+          <textarea cols="20" row="10" id="comments" name="comments"></textarea>
+          <button type="submit" id="submit">Submit</button>
         </fieldset>
       </form>
     </main>
